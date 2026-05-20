@@ -1,5 +1,4 @@
 package edu.cecade.tareas.modelo;
-
 public class Tarea {
     private String titulo;
     private int id;
@@ -11,7 +10,19 @@ public Tarea(String titulo, int id, String descripcion, String estado, String fe
     this.titulo = titulo;
     this.id = id;
     this.descripcion = descripcion;
-    this.estado = "Entregado";
+    this.estado = "Pendiente";
     this.fechaDeEntrega = fechaDeEntrega;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public String getFechaDeEntrega() {
+        return fechaDeEntrega;
     }
 }
