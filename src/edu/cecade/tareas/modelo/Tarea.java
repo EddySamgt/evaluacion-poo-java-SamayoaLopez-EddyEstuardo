@@ -13,5 +13,5 @@ public Tarea(String titulo, int id, String descripcion, String estado, String fe
     this.descripcion = descripcion;
     this.estado = "Entregado";
     this.fechaDeEntrega = fechaDeEntrega;
-}
+    }
 }

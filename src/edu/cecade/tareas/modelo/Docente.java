@@ -1,17 +1,17 @@
 package edu.cecade.tareas.modelo;
 
 public class Docente extends Usuario {
-    private String grado;
+    private String cursoAsignado;
     private int codigo;
 
-    public Docente(String nombre, String grado, int codigo){
+    public Docente(String nombre, String cursoAsignado, int codigo){
         super(nombre);
-        this.grado = grado;
+        this.cursoAsignado = cursoAsignado;
         this.codigo = codigo;
     }
 
     @Override
     public void mostrarInfo() {
-
+        System.out.println("Docente: " + nombre + "Curso Asignado: " + cursoAsignado + "Codigo: " + codigo);
     }
 }
